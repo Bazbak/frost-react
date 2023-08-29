@@ -1,0 +1,83 @@
+.padding20{
+    padding: 20px;
+}
+.padding50{
+    padding: 50px;
+}
+.borderE5{
+    border: 1px solid #e5e5e5;
+}
+.marginBot20{
+    margin-bottom: 20px;
+}
+.marginTop25px{
+    margin-top: 25px;
+}
+.styleLink{
+    color: #2056bd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.marginBot150px{
+    margin-bottom: 150px;
+}
+.marginTopBot20{
+    margin: 20px 0;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flexBaseline{
+    display: flex;
+    align-items: baseline;
+}
+.spaceBtw{
+    display: flex;
+    justify-content: space-between;
+}
+.paddingBasket{
+    padding: 10px 50px;
+    background-color: #2156bd;
+    color: white;
+    margin: 0 15px;
+}
+.width70{
+    width: 70%;
+}
+.width15{
+    width: 15%;
+}
+.textCenter{
+    text-align: center;
+}
+.borderBotColor{
+    border-bottom: 1px solid #d3d3d3;
+}
+.backWhite{
+    background-color: white;
+}
+.color9b{
+    color: #9b9b9b;
+}
+.bold{
+    font-weight: bold;
+}
+.butCheck{
+    padding: 10px 100px;
+    color: white;
+    background-color: #2156bd;
+    display: inline;
+}
+.color{
+    background-color: blue;
+}
+.just{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.marginAuto{
+    width: 70%;
+    margin: 0 auto;
+}

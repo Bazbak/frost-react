@@ -1,0 +1,52 @@
+.ProductList .item {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.cityAndPhone{
+  display: flex;
+  align-items: center;
+}
+.boxNth{
+  margin-right: 50px;
+}
+.paddingPhoneCity{
+  padding: 2px 15px;
+  color: white;
+}
+.inputGrow{
+  padding: 9px 140px 6px 5px;
+  background-color: #474747;
+  border: 1px solid #6A6A6A;
+}
+.inputGrow::placeholder {
+  color: #989898;
+}
+.glass{
+  position: absolute;
+  right: 0;
+  padding: 6px 10px;
+  border-left: 1px solid #6A6A6A;
+}
+.box1{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.loginKab{
+  color: #E4E4E4;
+}
+.two{
+  width: 20px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #2156bd;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -5px;
+  margin-top: 3px;
+  color: white;
+}

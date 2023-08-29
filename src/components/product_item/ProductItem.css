@@ -1,0 +1,9 @@
+.pages {
+  display: flex;
+}
+.item{
+  padding: 15px;
+  background: aqua;
+  color: white;
+  margin: 10px;
+}

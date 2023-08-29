@@ -1,0 +1,15 @@
+.widthInput{
+    width: 100%;
+}
+.width45{
+    width: 45%;
+}
+
+.displayFlex{
+    display: flex;
+    justify-content: space-between
+}
+.line{
+    width: 1px;
+    background: #fbe8e8;
+}
