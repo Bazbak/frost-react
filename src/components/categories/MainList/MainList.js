@@ -12,14 +12,17 @@ import Modalka from "../../../ui/uiDetails/Modalka";
 import useModal from "../../Hooks/useModal";
 import { useParams } from "react-router-dom";
 
-let arr = [img1, img2, img3, img4, img5];
-let poster = img1;
-let lable = img6;
+
 
 const PRODUCT_ID = 7;
 
 
 function MainList(props) {
+    let poster = img1;
+    let lable = img6;
+    let arr = [img1, img2, img3, img4, img5];
+
+
     const [visible, open, close] = useModal();
 
     const [box, setBoxes] = useState({
@@ -55,7 +58,7 @@ function MainList(props) {
     }, []);
 
     useEffect(() => {
-        axios.get('http://frost.runtime.kz/products/4')
+        axios.get('http://frost.runtime.kz/products/' + params.id)
             .then(response => {
                 let data = response.data;
                 setBoxes(data)
@@ -69,23 +72,26 @@ function MainList(props) {
     const [firstImg, setImg] = useState([img2, img3, img4, img5]);
     const [logo, setLogo] = useState(poster)
 
+
     function clickImg(index) {
-        setLogo(function (prev) {
-            let newBox = [...prev];
-            newBox[index] = img6
-            return newBox
-        })
+        console.log(firstImg[index])
+        setLogo(firstImg[index])
+        // {
+            // let newBox = [...prev];
+            // newBox = firstImg[index]
+            // // newBox[index] = img6
+            // return newBox
+        // }
+        // )
     }
 
     const params = useParams();
-    console.log('--- params ---');
-    console.log(params);
 
     return (
         <div style={{ padding: '15px', margin: '0 auto' }} className='col-7'>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '35px' }}>
                 <div style={{ width: '30%', display: 'flex', flexDirection: 'column' }}>
-                    <img style={{ marginBottom: '10px' }} src={poster}/>
+                    <img style={{ marginBottom: '10px' }} src={logo}/>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         {/*<img style={{marginBottom: '10px'}} src={poster}/>*/}
                         {firstImg.map(function (item, index) {
@@ -141,6 +147,7 @@ function MainList(props) {
                         </div>
                         <p style={{ width: '50%' }}>
                             {box.code}
+                            {/*{params.id}*/}
                         </p>
                         <p style={{ width: '50%' }}>
                             {box.manufacturer}

@@ -18,7 +18,7 @@ function UiDropBox(props) {
 
     return (
         <div style={{ padding: '15px' }}>
-            <Link to={'/product/props.items.product.id'}>
+            <Link to={'/product/' + props.items.product.id}>
                 <img src={img1}/>
             </Link>
             {/*<Link to={'/cart'}>123</Link>*/}
